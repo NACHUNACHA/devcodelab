@@ -44,7 +44,7 @@
 <canvas bind:this={canvas} class="bg-canvas"></canvas>
 
 <div class="content font-[Kanit] h-screen flex justify-center items-center">
-    <div class="w-[700px] p-8 text-white flex flex-col items-center justify-center gap-8 rounded-[9px] border-[1px] border-[#1B1B1B] bg-black/80 backdrop-blur-sm">
+    <div class="w-[700px] m-8 p-8 text-white flex flex-col items-center justify-center gap-8 rounded-[9px] border-[1px] border-[#1B1B1B] bg-black/80 backdrop-blur-sm">
         <div class="flex flex-col items-center ">
             <p class="text-xl font-semibold">ยินดีต้อนรับ</p>
             <img src={codelabs} alt="CodeLabs Logo" class="w-96"/>
