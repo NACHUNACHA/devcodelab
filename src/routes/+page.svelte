@@ -22,7 +22,9 @@
                 <input type="password" id="password" name="password" class="rounded-[5px] p-2 bg-[#090909] text-white" placeholder="กรุณากรอกรหัสผ่าน"/>
             </div>
 
-            <button class="cursor-pointer justify-end">ลืมรหัสผ่าน</button>
+            <div class="w-full flex justify-end">
+                <button class="cursor-pointer">ลืมรหัสผ่าน</button>
+            </div>
 
             <button type="submit" class="cursor-pointer mt-6 bg-gradient-to-r from-[#5602FE] via-[#34B1FE] to-[#7632FF] text-white font-bold py-2 px-4 rounded-[5px] w-full">
                 เข้าสู่ระบบ
