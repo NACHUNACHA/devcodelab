@@ -5,24 +5,10 @@
     import { onMount } from 'svelte';
 
     let canvas;
-
-    function resizeCanvas() {
-        if (canvas) {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-    }
-
+    
     onMount(() => {
-        resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
-
         const app = new Application(canvas);
         app.load("https://prod.spline.design/44RXbIkrQgxHWvur/scene.splinecode");
-
-        return () => {
-            window.removeEventListener('resize', resizeCanvas);
-        };
     });
 </script>
 
@@ -33,7 +19,6 @@
         width: 100vw;
         height: 100vh;
         z-index: 0;
-        display: block;
     }
     .content {
         position: relative;
@@ -41,7 +26,9 @@
     }
 </style>
 
-<canvas bind:this={canvas} class="bg-canvas"></canvas>
+<div class="bg-canvas">
+    <canvas bind:this={canvas}></canvas>
+</div>
 
 <div class="content font-[Kanit] min-h-screen flex justify-center items-center px-2 sm:px-0">
     <div class="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-[700px] m-2 sm:m-8 p-4 sm:p-8 text-white flex flex-col items-center justify-center gap-6 sm:gap-8 rounded-[9px] border border-[#1B1B1B] bg-black/80 backdrop-blur-sm">
