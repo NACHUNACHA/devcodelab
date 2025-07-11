@@ -21,39 +21,33 @@
 	});
 </script>
 
-<div class="font-satoshi flex flex-col gap-12 p-32 text-white">
+<div class="font-satoshi flex flex-col gap-8 px-4 py-8 sm:px-8 sm:py-16 lg:px-32 lg:py-32 text-white">
 	<div>
-		<h1 class="mb-4 text-4xl lg:text-5xl">Creative Showcase</h1>
-		<p class="max-w-xl text-lg font-light lg:text-xl">
+		<h1 class="mb-4 text-3xl sm:text-4xl lg:text-5xl">Creative Showcase</h1>
+		<p class="max-w-xl text-base sm:text-lg font-light lg:text-xl">
 			A collection of real projects we've crafted with clients — including websites, applications,
 			and high-quality design work.
 		</p>
 	</div>
 
-	<div
-		class="max-w-full rounded-2xl border border-white/10 bg-gradient-to-l from-white/5 to-50% hover:border-white/20 hover:shadow-xl"
-	>
-		<div class="grid grid-cols-2 overflow-hidden">
-			<div class="flex flex-col justify-center gap-8 p-8">
+	<div class="max-w-full rounded-2xl border border-white/10 bg-gradient-to-l from-white/5 to-50% hover:border-white/20 hover:shadow-xl">
+		<div class="grid grid-cols-1 md:grid-cols-2 min-w-0 overflow-hidden">
+			<div class="flex flex-col justify-center gap-6 sm:gap-8 p-4 sm:p-8">
 				<div class="flex items-center gap-3">
-					<img src={jibLogo} alt="JIB Logo" class="h-10 w-10 rounded-lg" />
-					<h2 class="text-2xl font-bold lg:text-3xl">JIB Dashboard</h2>
+					<img src={jibLogo} alt="JIB Logo" class="h-8 w-8 sm:h-10 sm:w-10 rounded-lg" />
+					<h2 class="text-xl sm:text-2xl font-bold lg:text-3xl">JIB Dashboard</h2>
 				</div>
-
-				<h3 class="text-xl">Smart Data Dashboard</h3>
-
-				<p class="leading-relaxed text-white/60">
+				<h3 class="text-lg sm:text-xl">Smart Data Dashboard</h3>
+				<p class="leading-relaxed text-white/60 text-sm sm:text-base">
 					Gain full control and clarity over your business with our intuitive dashboards. Track
 					performance, visualize key metrics, and make better decisions — all in one place.
 				</p>
-
 				<div class="flex flex-wrap gap-2 text-[#737373]">
 					<span class="tag">UX/UI</span>
 					<span class="tag">Dashboard</span>
 					<span class="tag">Data Analytics</span>
 				</div>
-
-				<div class="flex gap-5">
+				<div class="flex gap-3 sm:gap-5 flex-wrap">
 					<div class="tech-icon">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 101 100"
 							><path
@@ -145,22 +139,18 @@
 				</div>
 			</div>
 
-			<div class="flex rotate-[7deg] flex-col items-center justify-center gap-4">
+			<div class="flex rotate-[7deg] flex-col items-center justify-center gap-2 sm:gap-4">
 				<div class="marquee-container">
 					<div class="marquee-content">
 						{#each [1, 2, 3, 4, 5, 6] as i}
-							<div
-								class="content h-40 w-56 flex-shrink-0 rounded-xl border border-white/20 bg-gradient-to-t from-white/20 to-black"
-							></div>
+							<div class="content h-24 w-40 sm:h-32 sm:w-56 flex-shrink-0 rounded-xl border border-white/20 bg-gradient-to-t from-white/20 to-black"></div>
 						{/each}
 					</div>
 				</div>
 				<div class="marquee-container">
 					<div class="marquee-content-reverse">
 						{#each [1, 2, 3, 4, 5, 6] as i}
-							<div
-								class="h-40 w-56 flex-shrink-0 rounded-xl border border-white/20 bg-gradient-to-t from-white/20 to-black"
-							></div>
+							<div class="h-24 w-40 sm:h-32 sm:w-56 flex-shrink-0 rounded-xl border border-white/20 bg-gradient-to-t from-white/20 to-black"></div>
 						{/each}
 					</div>
 				</div>
@@ -171,16 +161,16 @@
 	<div
 		class="max-w-full rounded-2xl border border-white/10 bg-gradient-to-l from-white/5 to-50% hover:border-white/20 hover:shadow-xl"
 	>
-		<div class="grid grid-cols-2 overflow-hidden">
-			<div class="flex flex-col justify-center gap-8 p-8">
+		<div class="grid grid-cols-1 md:grid-cols-2 min-w-0 overflow-hidden">
+			<div class="flex flex-col justify-center gap-6 sm:gap-8 p-4 sm:p-8">
 				<div class="flex items-center gap-3">
-					<img src={melonLogo} alt="Melon Thai Logo" class="h-10 w-10 rounded-lg object-cover" />
-					<h2 class="text-2xl font-bold lg:text-3xl">MELON THAI</h2>
+					<img src={melonLogo} alt="Melon Thai Logo" class="h-8 w-8 sm:h-10 sm:w-10 rounded-lg object-cover" />
+					<h2 class="text-xl sm:text-2xl font-bold lg:text-3xl">MELON THAI</h2>
 				</div>
 
-				<h3 class="text-xl">Yearly Mobile Internet SIMs</h3>
+				<h3 class="text-lg sm:text-xl">Yearly Mobile Internet SIMs</h3>
 
-				<p class="leading-relaxed text-white/60">
+				<p class="leading-relaxed text-white/60 text-sm sm:text-base">
 					Discover the best yearly data SIMs from all major networks! Enjoy unlimited high-speed
 					internet, free calls, and uninterrupted connectivity for a full year. Say goodbye to
 					monthly top-ups and embrace limitless online access with Melon Thai.
@@ -193,7 +183,7 @@
 					<span class="tag">Back-office</span>
 				</div>
 
-				<div class="flex gap-5">
+				<div class="flex gap-3 sm:gap-5 flex-wrap">
 					<div class="tech-icon">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 101 100"
 							><path
